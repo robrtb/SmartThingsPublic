@@ -36,7 +36,7 @@ def page1() {
       input "hostHub", "hub", title: "Select Hub", multiple: false, required: true
     }
     section("SmartThings Node Proxy") {
-      input "proxyAddress", "text", title: "Proxy Address", description: "(ie. 192.168.1.10)", required: true, defaultValue: "192.168.7.52"
+      input "proxyAddress", "text", title: "Proxy Address", description: "(ie. 192.168.1.10)", required: true, defaultValue: "192.168.0.13"
       input "proxyPort", "text", title: "Proxy Port", description: "(ie. 8080)", required: true, defaultValue: "8080"
       input "authCode", "password", title: "Auth Code", description: "", required: true, defaultValue: "bobby"
     }
@@ -49,9 +49,9 @@ def page1() {
 
     //if (pluginType == "envisalink") {
       section("Envisalink Vista TPI") {
-        input "evlAddress", "text", title: "Host Address", description: "(ie. 192.168.1.11)", required: false, defaultValue: "192.168.7.54"
+        input "evlAddress", "text", title: "Host Address", description: "(ie. 192.168.1.11)", required: false, defaultValue: "192.168.0.13"
         input "evlPort", "text", title: "Host Port", description: "(ie. 4025)", required: false, defaultValue: "4025"
-        input "evlPassword", "password", title: "Password", description: "", required: false, defaultValue: "user"
+        input "evlPassword", "password", title: "Password", description: "", required: false, defaultValue: "duh1"
       }
     //}
 
